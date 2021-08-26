@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login to BOOKAZOO0</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="first">
+            <span id="textstyle">
+                <div id="v">B</div>
+                <div id="v">O</div>
+                <div id="v">0</div>
+                <div id="v">K</div>
+                <div id="v">A</div>
+                <div id="v">Z</div>
+                <div id="v"></div>
+                <div id="v">0</div>
+                <div id="v">O</div>
+              </span>
+            <div class="second">
+              
+                  
+                <div class="button">
+                    <div id="btn"></div>
+                  <button type="button" class="toggle-btn" onclick="login()">Log-In</button>  
+                  <button type="button" class="toggle-btn" onclick="register()">Register</button>  
+
+                </div>
+                <div class="social-icons">
+                   <a href="https://www.facebook.com/" >
+                <img src="fb..png" alt="Fb" ></a>
+                   <a href="https://mail.google.com/"> <img src="gmail.jpg" alt="Gmail"></a>
+                   <a href="https://twitter.com/?lang=en-in"> <img src="twitter.png" alt="Twitter"></a></div>
+            
+            <form class="input-group" id="login">
+                <input type="text"  class="input-field" placeholder="User Id" required>
+                <input type="text"  class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" id="loginbutton" >Log In</button>
+                 
+            </form>
+            <form class="input-group" id="register">
+                <input type="text"  class="input-field" placeholder="User Id" required>
+                <input type="email"  class="input-field" placeholder="Email Id" required>
+                <input type="password"  class="input-field" placeholder="Enter your Password" required>
+                <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+                 
+            </form>
+        </div>
+            </div>
+            <script>
+                var x=document.getElementById("login");
+                var y= document.getElementById("register");
+                var z= document.getElementById("btn");
+
+                function register(){
+                    x.style.left="-450px";
+                    y.style.left="50px";
+                    z.style.left="110px";
+                }
+                function login(){
+                    x.style.left="50px";
+                    y.style.left="450px";
+                    z.style.left="0px";
+                }
+            </script>
+    </body>
+</html>
